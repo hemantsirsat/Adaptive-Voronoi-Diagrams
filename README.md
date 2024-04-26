@@ -13,8 +13,7 @@ The production of Carbon Fiber Reinforced Polymer(CFRP) components requires that
 
 The underlying assumption is that the positions of potential leakage are close to the vaccum ports that have large flow values. This fits well with the idea of Voronoi diagrams. The idea is to create Voronoi regions for every vaccum port and the Voronoi edge will act as a hyperplane separating two Voronoi regions(halfspaces). Since, two Voronoi region will share a single Voronoi edge it is important to understand that moving one hyperplane in any direction will have an effect on two or more Voronoi regions.
 
-The hyperplane is represented using the equation 
-    \(\mathbf{w}^T \mathbf{y} + b = 0\) where \(\mathbf{w} \in \mathbb{R}^n\) and \(b \in \mathbb{R}\).
+The hyperplane is represented using the equation $$\mathbf{w}^T \mathbf{y} + b = 0$$ where $$\mathbf{w} \in \mathbb{R}^n, b \in \mathbb{R}$$
 
 ### Goals
 
