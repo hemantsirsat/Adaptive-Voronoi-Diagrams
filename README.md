@@ -24,6 +24,19 @@ ___
 3. Apply your framework using the leakage detection dataset provided by DLR.
 4. Compare your machine learning framework with appropriate classical machine learning methods for the same task in terms of training time, data requirements, model complexity, and accuracy
 
+### Results
+The following image shows the inital state of the Voronoi region before the cost function was optimized i.e., the value of the offset of the hyperplane was optimized to adapt the Voronoi region according to the position of the leakage co-ordinates.
+![Initial state of Voronoi regions](./Report/initial_leakage_position.png "Title")
+
+The cost function was optimized on two datasets. The one consisting of the outliers and the other from which we discarded the outliers. As expected, the bias value was better optimized for generalization when the dataset without outliers was used. The accuracy on unseen data was *98,04 %* for bias value optimized using the dataset without outliers as compared to *94,23 %* when optimized with dataset consisting of the outliers.
+
+***Final state of the Voronoi region using dataset with outliers (95.22 %)*** 
+![Final state of the Voronoi region using dataset with outliers](./Report/AVD_with_outliers.png "Final state of the Voronoi region using dataset with outliers")
+
+
+***Final state of the Voronoi region using dataset without outliers (96.05 %)***
+![Final state of the Voronoi region using dataset without outliers](./Report/AVD_without_outliers.png "Final state of the Voronoi region using dataset without outliers")
+
 ### References
 
 ___
